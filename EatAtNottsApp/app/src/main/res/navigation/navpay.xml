@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navpay"
+    app:startDestination="@id/paymentPickUp">
+    <fragment
+        android:id="@+id/paymentPickUp"
+        android:name="com.example.eatatnotts.Payment.PaymentPickUp"
+        android:label="activity_payment_pick_up"
+        tools:layout="@layout/fragment_payment_pick_up" >
+        <action
+            android:id="@+id/PickUpToDelivery"
+            app:destination="@id/paymentDelivery" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentDelivery"
+        android:name="com.example.eatatnotts.Payment.PaymentDelivery"
+        android:label="activity_payment_delivery"
+        tools:layout="@layout/fragment_payment_delivery" >
+        <action
+            android:id="@+id/DeliveryToPickup"
+            app:destination="@id/paymentPickUp" />
+    </fragment>
+</navigation>
