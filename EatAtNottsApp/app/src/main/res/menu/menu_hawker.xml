@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/customerorder"
+        android:icon="@drawable/baseline_border_color_24"
+        android:title="@string/customer_order" />
+
+<!--    <item-->
+<!--        android:id="@+id/AddActivity"-->
+<!--        android:icon="@drawable/baseline_local_activity_24"-->
+<!--        android:title="Add Activity" />-->
+<!--    <item-->
+<!--        android:id="@+id/AddFood"-->
+<!--        android:icon="@drawable/baseline_food_bank_24"-->
+<!--        android:title="Add Food" />-->
+    <item
+        android:id="@+id/pending"
+        android:icon="@drawable/baseline_pending_actions_24"
+        android:title="@string/pending" />
+
+    <item
+        android:id="@+id/profilehawker"
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/title_profile" />
+</menu>
